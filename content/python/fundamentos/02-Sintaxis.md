@@ -37,7 +37,7 @@ public class HelloWorld
 {
    public static void main(String[] args)
    {
-      System.out.println("Hello world!");
+      System.out.println("Hola Mundo!");
    }
 }
 </pre>
@@ -45,7 +45,7 @@ public class HelloWorld
 
         <td>
 <pre>
-print("Hello world!")
+print("Hola Mundo!")
 </pre>
         </td>
     </tr>
@@ -57,7 +57,7 @@ print("Hello world!")
         <td>
 <pre>
 if (true) {
-    System.out.print("True");
+    System.out.print("Verdadero");
 } else {
     System.out.print("False");
 }
@@ -66,7 +66,7 @@ if (true) {
         <td>
 <pre>
 if True:
-    print("True")
+    print("Verdadero")
 else:
     print("False")
 </pre>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+  
+  
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  
+
+  
+  <title>02 sintaxis</title>
+
+  
+  
+  <link rel="stylesheet" href="/css/hugo-octopress.css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  
+  <link href="http://example.org/favicon.png" rel="icon">
+
+  
+  
+  
+
+  
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="author" content="">
+
+  
+  <meta name="generator" content="Hugo 0.19-DEV" />
+
+  
+  
+
+</head>
+<body>
+
+
+<header role="banner"><hgroup>
+  
+  <h1><a href="http://example.org/">My New Hugo Site</a></h1>
+    <h2></h2>
+</hgroup></header>
+
+
+<nav role="navigation">
+<fieldset class="mobile-nav">
+  
+  <select onchange="location = this.value;">
+    <option value="">Navigate…</option>
+      
+
+  </select>
+</fieldset>
+
+
+<ul class="main-navigation">
+  
+  
+</ul>
+
+
+<ul class="subscription">
+  
+
+</ul>
+
+
+</nav>
+
+
+<div id="main">
+  <div id="content">
+    <div>
+      <article class="hentry" role="article">
+
+        
+        
+
+<header>
+    <p class="meta">Jan 17, 2018
+         - 1 minute read 
+        
+
+        
+    </p>
+    <h1 class="entry-title">
+         02 sintaxis 
+    </h1>
+</header>
+
+
+        <div class="entry-content">
+          
+          
+          
+          
+          
+
+<h1 id="sintaxis">Sintaxis</h1>
+
+<p>Como dije anteriormente, la principal característica de Python es la legibilidad de su código, caracteres de terminación o segmentación de bloques usuales en otros lenguajes son inexistentes en python.</p>
+
+<p>Notamos la diferencia comparando con Java y Python</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>
+            Programa
+        </th>
+        <th>
+            Java
+        </th>
+        <th>
+            Python
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            Hola mundo
+        </td>
+
+        <td>
+<pre>
+public class HelloWorld
+{
+   public static void main(String[] args)
+   {
+      System.out.println("Hola Mundo!");
+   }
+}
+</pre>
+        </td>
+
+        <td>
+<pre>
+print("Hola Mundo!")
+</pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Condicionales
+        </td>
+
+        <td>
+<pre>
+if (true) {
+    System.out.print("Verdadero");
+} else {
+    System.out.print("False");
+}
+</pre>
+        </td>
+        <td>
+<pre>
+if True:
+    print("Verdadero")
+else:
+    print("False")
+</pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Ciclos for
+        </td>
+
+        <td>
+<pre>
+for (int i = 0; i < 5; i++) {
+   for (int j = 0; j <= i; j++) {
+      System.out.print("*");
+   }
+   System.out.println();
+}
+</pre>
+        </td>
+        <td>
+<pre>
+for i in xrange(5):
+    for j in xrange(i+1):
+        ptiny("*")
+    print()
+</pre>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<p>En el siguiente capítulo recordaremos las estructuras básicas de programación, pero lo que quiero que comprendas en este punto es que aunque la indentación es recomendada en otros lenguajes de programación, en Python es obligatoria, además de servir para la separación semántica de bloques de programación, mantenie el código legible.</p>
+
+<p>El espacio recomendado entre cada bloque de indentación es de 4 espacios, esta es la recomendación por <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>.</p>
+
+<blockquote>
+<p>PEP (Python Enhancement Proposals) son un conjunto de guías que la comunidad de Python define para la mejora del lenguaje. Todos los cambios han ocurrido en el lenguaje están consignados en estas propuestas. Son el equivalente Python de las <a href="https://en.wikipedia.org/wiki/Request_for_Comments">RFC</a> por parte de la <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force">IETF</a>.</p>
+</blockquote>
+
+        </div>
+        
+
+<footer>
+  <p class="meta">
+    <span class="byline author vcard">Posted by <span class="fn"></span></span>
+    
+    <time>Jan 17, 2018</time>
+    
+    </span>
+  </p>
+
+  
+  
+
+  
+
+  <p class="meta">
+    
+        <a class="basic-alignment left" href="http://example.org/python/fundamentos/01-Introducci%C3%B3n/" title="01_intro">01_intro</a>
+    
+
+    
+      <a class="basic-alignment right" href="http://example.org/python/fundamentos/03-Condicionales/" title="03 Condicionales">03 Condicionales</a>
+    
+  </p>
+  
+</footer>
+
+      </article>
+    </div>
+    
+
+<aside class="sidebar thirds">
+  <section class="first odd">
+
+    
+
+    <p>
+      
+    </p>
+  </section>
+
+
+
+  
+  <ul class="sidebar-nav">
+    <li class="sidebar-nav-item">
+      
+      
+      
+      
+       
+      
+      
+      
+      
+      
+      
+
+    
+    
+    </li>
+  </ul>
+
+  
+
+  
+
+  
+  
+  
+
+</aside>
+
+  </div>
+</div>
+
+<footer role="contentinfo">
+  <p>Copyright &copy; 2018  - <a href="http://example.org/license/">License</a> -
+  <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
+</p>
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+

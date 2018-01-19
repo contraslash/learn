@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pythons on My New Hugo Site</title>
+    <link>http://example.org/python/index.xml</link>
+    <description>Recent content in Pythons on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jan 2018 22:49:05 -0500</lastBuildDate>
+    <atom:link href="http://example.org/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>03 Condicionales</title>
+      <link>http://example.org/python/fundamentos/03-Condicionales/</link>
+      <pubDate>Thu, 18 Jan 2018 22:49:05 -0500</pubDate>
+      
+      <guid>http://example.org/python/fundamentos/03-Condicionales/</guid>
+      <description>
+
+&lt;h1 id=&#34;estructuras-de-decisión&#34;&gt;Estructuras de decisión&lt;/h1&gt;
+
+&lt;p&gt;Las estructuras de decisión son bloques de código que se ejecutan en función del valor de verdad de una sentencia.&lt;/p&gt;
+
+&lt;p&gt;Las estructuras de decisión mas comunes son las de tipo IF-THEN, IF-THEN-ELSE y SWITCH-CASE&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IF-THEN&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esta estructura de código es muy usada para la ejecución exclusiva de un bloque de código si ocurre una condición. Es por definición la estructura de decisión mas simple. Python usa la palabra reservada &lt;code&gt;if&lt;/code&gt; para realizar estas acciones&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  if x:
+      print(&amp;quot;Hola&amp;quot;)  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IF-THEN-ELSE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aumentando la semántica del lenguaje, tenemos situaciones donde además de ejecutar una acción en función de otra, si no ocurre, debemos ejecutar otro conjunto de acciones. Python nos permite realizar eso con la palabra reservada &lt;code&gt;else&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  if x:
+      print(&amp;quot;Hola&amp;quot;)
+  else:
+      print(&amp;quot;Adios&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;La estructura sintáctica de &lt;code&gt;else&lt;/code&gt; solo se permite una vez, después y bajo el mismo bloque de identación del &lt;code&gt;if&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SWITCH-CASE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por último, las estructuras condicionales complejas, donde se ejecutan bloques de código en estructuras n-arias pueden implementarse en python utilizando la palabra reservada &lt;code&gt;elif&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;  if x == 1:
+      print(&amp;quot;Hola&amp;quot;)
+  elif x == 2:
+      print(&amp;quot;Adios&amp;quot;)
+  elif x == 3:
+      print(&amp;quot;Hasta luego&amp;quot;)
+  else:
+      print(&amp;quot;Buena vida&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;El uso de &lt;code&gt;elif&lt;/code&gt; está condicionado a la existencia de un &lt;code&gt;if&lt;/code&gt; anterior, seguido de uno o mas &lt;code&gt;elif&lt;/code&gt; y la presencia o no de un único &lt;code&gt;else&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>02 sintaxis</title>
+      <link>http://example.org/python/fundamentos/02-Sintaxis/</link>
+      <pubDate>Wed, 17 Jan 2018 21:53:08 -0500</pubDate>
+      
+      <guid>http://example.org/python/fundamentos/02-Sintaxis/</guid>
+      <description>
+
+&lt;h1 id=&#34;sintaxis&#34;&gt;Sintaxis&lt;/h1&gt;
+
+&lt;p&gt;Como dije anteriormente, la principal característica de Python es la legibilidad de su código, caracteres de terminación o segmentación de bloques usuales en otros lenguajes son inexistentes en python.&lt;/p&gt;
+
+&lt;p&gt;Notamos la diferencia comparando con Java y Python&lt;/p&gt;
+
+&lt;table&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;
+            Programa
+        &lt;/th&gt;
+        &lt;th&gt;
+            Java
+        &lt;/th&gt;
+        &lt;th&gt;
+            Python
+        &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            Hola mundo
+        &lt;/td&gt;
+
+        &lt;td&gt;
+&lt;pre&gt;
+public class HelloWorld
+{
+   public static void main(String[] args)
+   {
+      System.out.println(&#34;Hola Mundo!&#34;);
+   }
+}
+&lt;/pre&gt;
+        &lt;/td&gt;
+
+        &lt;td&gt;
+&lt;pre&gt;
+print(&#34;Hola Mundo!&#34;)
+&lt;/pre&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            Condicionales
+        &lt;/td&gt;
+
+        &lt;td&gt;
+&lt;pre&gt;
+if (true) {
+    System.out.print(&#34;Verdadero&#34;);
+} else {
+    System.out.print(&#34;False&#34;);
+}
+&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+&lt;pre&gt;
+if True:
+    print(&#34;Verdadero&#34;)
+else:
+    print(&#34;False&#34;)
+&lt;/pre&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            Ciclos for
+        &lt;/td&gt;
+
+        &lt;td&gt;
+&lt;pre&gt;
+for (int i = 0; i &lt; 5; i++) {
+   for (int j = 0; j &lt;= i; j++) {
+      System.out.print(&#34;*&#34;);
+   }
+   System.out.println();
+}
+&lt;/pre&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+&lt;pre&gt;
+for i in xrange(5):
+    for j in xrange(i+1):
+        ptiny(&#34;*&#34;)
+    print()
+&lt;/pre&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;En el siguiente capítulo recordaremos las estructuras básicas de programación, pero lo que quiero que comprendas en este punto es que aunque la indentación es recomendada en otros lenguajes de programación, en Python es obligatoria, además de servir para la separación semántica de bloques de programación, mantenie el código legible.&lt;/p&gt;
+
+&lt;p&gt;El espacio recomendado entre cada bloque de indentación es de 4 espacios, esta es la recomendación por &lt;a href=&#34;https://www.python.org/dev/peps/pep-0008/&#34;&gt;PEP 8&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;PEP (Python Enhancement Proposals) son un conjunto de guías que la comunidad de Python define para la mejora del lenguaje. Todos los cambios han ocurrido en el lenguaje están consignados en estas propuestas. Son el equivalente Python de las &lt;a href=&#34;https://en.wikipedia.org/wiki/Request_for_Comments&#34;&gt;RFC&lt;/a&gt; por parte de la &lt;a href=&#34;https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force&#34;&gt;IETF&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>01_intro</title>
+      <link>http://example.org/python/fundamentos/01-Introducci%C3%B3n/</link>
+      <pubDate>Wed, 17 Jan 2018 21:49:00 -0500</pubDate>
+      
+      <guid>http://example.org/python/fundamentos/01-Introducci%C3%B3n/</guid>
+      <description>
+
+&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;
+
+&lt;p&gt;Python es un lenguaje multiparadigma creado a comienzo de los 90.&lt;/p&gt;
+
+&lt;p&gt;Desde el comienzo se caracterizó por ser un lenguaje diferente, dándole prioridad a la lectura y a la organización de código.&lt;/p&gt;
+
+&lt;p&gt;Entre sus características más técnicas entendemos que es un lenguaje de tipado dinámico y fuertemente tipado, lo que indica que en la declaración de variables no se hace necesario definir el tipo de las mismas sino que el interprete inferirá su tipo en tiempo de ejecución. También que se guarda referencia de qué tipo es cada variable, a las cuales se puede acceder con las primitivas &lt;code&gt;isinstance&lt;/code&gt; y &lt;code&gt;type&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Algo más para entender es que Python es un lenguaje interpretado y no compilado, lo que quiere decir que sus instrucciones no se traducen inmediatamente a instrucciones en lenguaje ensamblador, sino que son ejecutadas por otro programa, el cual si las transforma en lenguaje de bajo nivel. Es por esta razón que no se debe comparar su velocidad con otros lenguajes compilados, como C o Go, pues la diferencia en el desempeño es trascendental.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/python/fundamentos/tabla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/python/fundamentos/tabla/</guid>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;
+Programa
+&lt;/th&gt;
+&lt;th&gt;
+Java
+&lt;/th&gt;
+&lt;th&gt;
+Python
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Hola mundo
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;pre&gt;
+public class HelloWorld
+{
+   public static void main(String[] args)
+   {
+      System.out.println(&#34;Hello world!&#34;);
+   }
+}
+&lt;/pre&gt;
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;pre&gt;
+print(&#34;Hello world!&#34;)
+&lt;/pre&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Ciclos for
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;pre&gt;
+for (int i = 0; i &lt; 5; i++) {
+   for (int j = 0; j &lt;= i; j++) {
+      System.out.print(&#34;*&#34;);
+   }
+   System.out.println();
+}
+&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;pre&gt;
+for i in xrange(5):
+    for j in xrange(i+1):
+        ptiny(&#34;*&#34;)
+    print()
+&lt;/pre&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Ciclos for
+&lt;/td&gt;
+
+&lt;td&gt;
+&lt;pre&gt;
+for (int i = 0; i &lt; 5; i++) {
+   for (int j = 0; j &lt;= i; j++) {
+      System.out.print(&#34;*&#34;);
+   }
+   System.out.println();
+}
+&lt;/pre&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;pre&gt;
+for i in xrange(5):
+    for j in xrange(i+1):
+        ptiny(&#34;*&#34;)
+    print()
+&lt;/pre&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
