@@ -1,5 +1,5 @@
 title = "My New Hugo Site"
-baseURL = "http://example.org/"
+baseURL = "http://contraslash.github.com/learn/"
 languageCode = "en-us"
 theme = "Hugo-Octopress"
 
