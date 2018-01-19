@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://example.org/index.xml</link>
+    <link>http://contraslash.github.com/learn/index.xml</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jan 2018 22:49:05 -0500</lastBuildDate>
-    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://contraslash.github.com/learn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>03 Condicionales</title>
-      <link>http://example.org/python/fundamentos/03-Condicionales/</link>
+      <link>http://contraslash.github.com/learn/python/fundamentos/03-Condicionales/</link>
       <pubDate>Thu, 18 Jan 2018 22:49:05 -0500</pubDate>
       
-      <guid>http://example.org/python/fundamentos/03-Condicionales/</guid>
+      <guid>http://contraslash.github.com/learn/python/fundamentos/03-Condicionales/</guid>
       <description>
 
 &lt;h1 id=&#34;estructuras-de-decisión&#34;&gt;Estructuras de decisión&lt;/h1&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>02 sintaxis</title>
-      <link>http://example.org/python/fundamentos/02-Sintaxis/</link>
+      <link>http://contraslash.github.com/learn/python/fundamentos/02-Sintaxis/</link>
       <pubDate>Wed, 17 Jan 2018 21:53:08 -0500</pubDate>
       
-      <guid>http://example.org/python/fundamentos/02-Sintaxis/</guid>
+      <guid>http://contraslash.github.com/learn/python/fundamentos/02-Sintaxis/</guid>
       <description>
 
 &lt;h1 id=&#34;sintaxis&#34;&gt;Sintaxis&lt;/h1&gt;
@@ -181,10 +181,10 @@ for i in xrange(5):
     
     <item>
       <title>01_intro</title>
-      <link>http://example.org/python/fundamentos/01-Introducci%C3%B3n/</link>
+      <link>http://contraslash.github.com/learn/python/fundamentos/01-Introducci%C3%B3n/</link>
       <pubDate>Wed, 17 Jan 2018 21:49:00 -0500</pubDate>
       
-      <guid>http://example.org/python/fundamentos/01-Introducci%C3%B3n/</guid>
+      <guid>http://contraslash.github.com/learn/python/fundamentos/01-Introducci%C3%B3n/</guid>
       <description>
 
 &lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;
@@ -201,10 +201,10 @@ for i in xrange(5):
     
     <item>
       <title></title>
-      <link>http://example.org/python/fundamentos/tabla/</link>
+      <link>http://contraslash.github.com/learn/python/fundamentos/tabla/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/python/fundamentos/tabla/</guid>
+      <guid>http://contraslash.github.com/learn/python/fundamentos/tabla/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
